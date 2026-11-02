@@ -1,0 +1,34 @@
+{
+  "name": "browser-terminal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "HOST=0.0.0.0 tsx watch server/index.ts",
+    "dev:client": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "NODE_ENV=production HOST=0.0.0.0 tsx server/index.ts",
+    "preview": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@xterm/addon-image": "^0.9.0",
+    "@xterm/addon-web-links": "^0.12.0",
+    "@xterm/xterm": "^5.5.0",
+    "better-sqlite3": "^11.10.0",
+    "express": "^4.21.2",
+    "http-proxy": "^1.18.1",
+    "node-pty": "^1.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/http-proxy": "^1.17.17",
+    "@types/node": "^22.10.2",
+    "@types/ws": "^8.5.13",
+    "concurrently": "^9.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}

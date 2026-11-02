@@ -1,0 +1,7 @@
+//https://github.com/devcontainers/images/tree/main/src/base-ubuntu
+//https://containers.dev/guide/dockerfile
+{
+	"build": {
+		"dockerfile": "Dockerfile"
+	}
+}

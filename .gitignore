@@ -1,0 +1,14 @@
+node_modules/
+.run/
+data/
+dist/
+.access_password
+.run/ssh-profiles.json
+.run/ssh-keys/
+certs/*.key
+certs/*.crt
+certs/*.pem
+*.log
+.DS_Store
+.qwen/
+package-lock.json
